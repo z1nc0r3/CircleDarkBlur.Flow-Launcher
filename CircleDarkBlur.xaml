@@ -11,30 +11,23 @@
     <system:Boolean x:Key="ThemeBlurEnabled">True</system:Boolean>
 
     <Style
-        x:Key="ItemGlyph"
-        BasedOn="{StaticResource BaseGlyphStyle}"
-        TargetType="{x:Type TextBlock}">
-        <Setter Property="Foreground" Value="#9da1aa" />
-    </Style>
-    <Style
         x:Key="QueryBoxStyle"
         BasedOn="{StaticResource BaseQueryBoxStyle}"
         TargetType="{x:Type TextBox}">
-        <Setter Property="Padding" Value="0,4,50,0" />
+        <Setter Property="Padding" Value="0,0,50,0" />
         <Setter Property="Foreground" Value="{m:DynamicColor SystemControlPageTextBaseHighBrush}" />
-        <Setter Property="FontSize" Value="28" />
+        <Setter Property="FontSize" Value="32" />
         <Setter Property="Height" Value="42" />
-        <Setter Property="Background" Value="Transparent" />
     </Style>
 
     <Style
         x:Key="QuerySuggestionBoxStyle"
         BasedOn="{StaticResource BaseQuerySuggestionBoxStyle}"
         TargetType="{x:Type TextBox}">
-        <Setter Property="Padding" Value="0,4,50,0" />
+        <Setter Property="Padding" Value="0,0,50,0" />
         <Setter Property="Background" Value="Transparent" />
         <Setter Property="Height" Value="42" />
-        <Setter Property="FontSize" Value="28" />
+        <Setter Property="FontSize" Value="32" />
         <Setter Property="Foreground" Value="{m:DynamicColor SystemControlHighlightBaseMediumLowBrush}" />
         <Setter Property="Opacity" Value="0.5" />
     </Style>
@@ -44,12 +37,11 @@
         BasedOn="{StaticResource BaseWindowBorderStyle}"
         TargetType="{x:Type Border}">
         <Setter Property="BorderThickness" Value="0" />
-        <Setter Property="BorderBrush" Value="{m:DynamicColor SystemControlBackgroundChromeMediumBrush}" />
-        <!-- <Setter Property="Background" Value="{m:DynamicColor SystemControlBackgroundChromeMediumLowBrush}" /> -->
+        <Setter Property="BorderBrush" Value="Transparent" />
 
         <Setter Property="Background">
             <Setter.Value>
-                <SolidColorBrush Color="Black" Opacity="0.7"/>
+                <SolidColorBrush Color="Black" Opacity="0.5"/>
             </Setter.Value>
         </Setter>
 
@@ -60,18 +52,16 @@
         x:Key="WindowStyle"
         BasedOn="{StaticResource BaseWindowStyle}"
         TargetType="{x:Type Window}" >
-        <Setter Property="Background">
+        <!-- <Setter Property="Background">
             <Setter.Value>
                 <SolidColorBrush Color="Black" Opacity="0.7" />
             </Setter.Value>
-        </Setter>
+        </Setter> -->
+        <Setter Property="Opacity" Value="0" />
+        <Setter Property="Background" Value="#fff" />
+        <Setter Property="Visibility" Value="Hidden"/>
     </Style>
-    <!-- <Style
-        x:Key="PendingLineStyle"
-        BasedOn="{StaticResource BasePendingLineStyle}"
-        TargetType="{x:Type Line}" /> -->
-
-    <!--  Item Style  -->
+    
     <Style
         x:Key="ItemTitleStyle"
         BasedOn="{StaticResource BaseItemTitleStyle}"
@@ -182,6 +172,7 @@
         BasedOn="{StaticResource BaseClockBox}"
         TargetType="{x:Type TextBlock}">
         <Setter Property="Foreground" Value="#999aa3" />
+        <Setter Property="Margin" Value="0,0,0,5" />
     </Style>
     <Style
         x:Key="DateBox"
