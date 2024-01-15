@@ -10,6 +10,7 @@
 
     <system:Boolean x:Key="ThemeBlurEnabled">True</system:Boolean>
 
+    <!-- Main query box style including Query text-->
     <Style
         x:Key="QueryBoxStyle"
         BasedOn="{StaticResource BaseQueryBoxStyle}"
@@ -20,6 +21,7 @@
         <Setter Property="Height" Value="42" />
     </Style>
 
+    <!-- Main query box suggesstions style -->
     <Style
         x:Key="QuerySuggestionBoxStyle"
         BasedOn="{StaticResource BaseQuerySuggestionBoxStyle}"
@@ -32,6 +34,7 @@
         <Setter Property="Opacity" Value="0.5" />
     </Style>
 
+    <!-- Query box border -->
     <Style
         x:Key="WindowBorderStyle"
         BasedOn="{StaticResource BaseWindowBorderStyle}"
@@ -62,6 +65,7 @@
         <Setter Property="Visibility" Value="Hidden"/>
     </Style>
     
+    <!-- Result styles -->
     <Style
         x:Key="ItemTitleStyle"
         BasedOn="{StaticResource BaseItemTitleStyle}"
@@ -74,6 +78,8 @@
         TargetType="{x:Type TextBlock}">
         <Setter Property="Foreground" Value="#ffffff" />
     </Style>
+
+    <!-- Seperator of Query and Result -->
     <Style
         x:Key="SeparatorStyle"
         BasedOn="{StaticResource BaseSeparatorStyle}"
@@ -97,6 +103,7 @@
     </Style>
     <SolidColorBrush x:Key="ItemSelectedBackgroundColor" Color="{m:DynamicColor SystemAccentColorLight1}" />
 
+    <!-- Search pending bar -->
     <Style
         x:Key="PendingLineStyle"
         BasedOn="{StaticResource BasePendingLineStyle}"
@@ -161,6 +168,8 @@
     <CornerRadius x:Key="ItemRadius">8</CornerRadius>
     <Thickness x:Key="ItemMargin">10 0 10 0</Thickness>
     <Thickness x:Key="ResultMargin">0 0 0 10</Thickness>
+    
+    <!-- Clock and Date styles -->
     <Style
         x:Key="ClockPanel"
         BasedOn="{StaticResource ClockPanel}"
@@ -180,6 +189,8 @@
         TargetType="{x:Type TextBlock}">
         <Setter Property="Foreground" Value="#a8abb3" />
     </Style>
+
+    <!-- Preview box styles -->
     <Style
         x:Key="PreviewBorderStyle"
         BasedOn="{StaticResource BasePreviewBorderStyle}"
