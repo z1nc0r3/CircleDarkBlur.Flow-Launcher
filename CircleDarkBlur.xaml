@@ -15,7 +15,7 @@
         BasedOn="{StaticResource BaseQueryBoxStyle}"
         TargetType="{x:Type TextBox}">
         <Setter Property="Padding" Value="0,0,50,0" />
-        <Setter Property="Foreground" Value="{m:DynamicColor SystemControlPageTextBaseHighBrush}" />
+        <Setter Property="Foreground" Value="#ffffff" />
         <Setter Property="FontSize" Value="32" />
         <Setter Property="Height" Value="42" />
     </Style>
@@ -28,7 +28,7 @@
         <Setter Property="Background" Value="Transparent" />
         <Setter Property="Height" Value="42" />
         <Setter Property="FontSize" Value="32" />
-        <Setter Property="Foreground" Value="{m:DynamicColor SystemControlHighlightBaseMediumLowBrush}" />
+        <Setter Property="Foreground" Value="#8a876e" />
         <Setter Property="Opacity" Value="0.5" />
     </Style>
 
@@ -66,19 +66,19 @@
         x:Key="ItemTitleStyle"
         BasedOn="{StaticResource BaseItemTitleStyle}"
         TargetType="{x:Type TextBlock}">
-        <Setter Property="Foreground" Value="{m:DynamicColor SystemControlPageTextBaseHighBrush}" />
+        <Setter Property="Foreground" Value="#ffffff" />
     </Style>
     <Style
         x:Key="ItemSubTitleStyle"
         BasedOn="{StaticResource BaseItemSubTitleStyle}"
         TargetType="{x:Type TextBlock}">
-        <Setter Property="Foreground" Value="{m:DynamicColor SystemControlPageTextBaseMediumBrush}" />
+        <Setter Property="Foreground" Value="#ffffff" />
     </Style>
     <Style
         x:Key="SeparatorStyle"
         BasedOn="{StaticResource BaseSeparatorStyle}"
         TargetType="{x:Type Rectangle}">
-        <Setter Property="Fill" Value="{m:DynamicColor SystemControlBackgroundChromeMediumBrush}" />
+        <Setter Property="Fill" Value="#77797e" />
         <Setter Property="Height" Value="1" />
         <Setter Property="Margin" Value="0,0,0,8" />
     </Style>
@@ -171,32 +171,32 @@
         x:Key="ClockBox"
         BasedOn="{StaticResource BaseClockBox}"
         TargetType="{x:Type TextBlock}">
-        <Setter Property="Foreground" Value="#999aa3" />
+        <Setter Property="Foreground" Value="#a8abb3" />
         <Setter Property="Margin" Value="0,0,0,5" />
     </Style>
     <Style
         x:Key="DateBox"
         BasedOn="{StaticResource BaseDateBox}"
         TargetType="{x:Type TextBlock}">
-        <Setter Property="Foreground" Value="#999aa3" />
+        <Setter Property="Foreground" Value="#a8abb3" />
     </Style>
     <Style
         x:Key="PreviewBorderStyle"
         BasedOn="{StaticResource BasePreviewBorderStyle}"
         TargetType="{x:Type Border}">
-        <Setter Property="BorderBrush" Value="{m:DynamicColor SystemControlBackgroundChromeMediumBrush}" />
+        <Setter Property="BorderBrush" Value="#77797e" />
     </Style>
     <Style
         x:Key="PreviewItemTitleStyle"
         BasedOn="{StaticResource BasePreviewItemTitleStyle}"
         TargetType="{x:Type TextBlock}">
-        <Setter Property="Foreground" Value="{m:DynamicColor SystemControlPageTextBaseHighBrush}" />
+        <Setter Property="Foreground" Value="#fff" />
     </Style>
     <Style
         x:Key="PreviewItemSubTitleStyle"
         BasedOn="{StaticResource BasePreviewItemSubTitleStyle}"
         TargetType="{x:Type TextBlock}">
-        <Setter Property="Foreground" Value="{m:DynamicColor SystemControlPageTextBaseMediumBrush}" />
+        <Setter Property="Foreground" Value="#c5d1da" />
     </Style>
     <Style
         x:Key="PreviewGlyph"
