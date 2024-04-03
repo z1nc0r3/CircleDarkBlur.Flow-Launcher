@@ -10,6 +10,17 @@
 
     <system:Boolean x:Key="ThemeBlurEnabled">True</system:Boolean>
 
+    <Style
+        x:Key="ItemBulletSelectedStyle"
+        BasedOn="{StaticResource BaseBulletStyle}"
+        TargetType="{x:Type Border}">
+        <Setter Property="Width" Value="4" />
+        <Setter Property="Height" Value="42" />
+        <Setter Property="CornerRadius" Value="2" />
+        <Setter Property="Background" Value="#fff" />
+        <Setter Property="Margin" Value="4,0,0,0" />
+    </Style>
+
     <!-- Main query box style including Query text-->
     <Style
         x:Key="QueryBoxStyle"
@@ -17,8 +28,13 @@
         TargetType="{x:Type TextBox}">
         <Setter Property="Padding" Value="0,0,50,0" />
         <Setter Property="Foreground" Value="#ffffff" />
-        <Setter Property="FontSize" Value="32" />
+        <Setter Property="FontSize" Value="30" />
         <Setter Property="Height" Value="42" />
+        <Setter Property="CaretBrush" Value="#A3A3A3" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="Stylus.IsFlicksEnabled" Value="False" />
     </Style>
 
     <!-- Main query box suggesstions style -->
@@ -29,7 +45,7 @@
         <Setter Property="Padding" Value="0,0,50,0" />
         <Setter Property="Background" Value="Transparent" />
         <Setter Property="Height" Value="42" />
-        <Setter Property="FontSize" Value="32" />
+        <Setter Property="FontSize" Value="30" />
         <Setter Property="Foreground" Value="#8a876e" />
         <Setter Property="Opacity" Value="0.5" />
     </Style>
@@ -44,39 +60,44 @@
 
         <Setter Property="Background">
             <Setter.Value>
-                <SolidColorBrush Color="Black" Opacity="0.5"/>
+                <SolidColorBrush Color="Black" Opacity="0.5" />
             </Setter.Value>
         </Setter>
 
-        <Setter Property="CornerRadius" Value="8" />
+        <Setter Property="CornerRadius" Value="10" />
         <Setter Property="UseLayoutRounding" Value="True" />
+        <Setter Property="SnapsToDevicePixels" Value="True" />
     </Style>
     <Style
         x:Key="WindowStyle"
         BasedOn="{StaticResource BaseWindowStyle}"
-        TargetType="{x:Type Window}" >
-        <!-- <Setter Property="Background">
+        TargetType="{x:Type Window}">
+        <Setter Property="Background">
             <Setter.Value>
                 <SolidColorBrush Color="Black" Opacity="0.7" />
             </Setter.Value>
-        </Setter> -->
+        </Setter>
         <Setter Property="Opacity" Value="0" />
         <Setter Property="Background" Value="#fff" />
-        <Setter Property="Visibility" Value="Hidden"/>
+        <Setter Property="Visibility" Value="Hidden" />
     </Style>
-    
+
+    <Style x:Key="WindowRadius" TargetType="{x:Type Border}">
+        <Setter Property="CornerRadius" Value="10" />
+    </Style>
+
     <!-- Result styles -->
     <Style
         x:Key="ItemTitleStyle"
         BasedOn="{StaticResource BaseItemTitleStyle}"
         TargetType="{x:Type TextBlock}">
-        <Setter Property="Foreground" Value="#ffffff" />
+        <Setter Property="Foreground" Value="#bfbfbf" />
     </Style>
     <Style
         x:Key="ItemSubTitleStyle"
         BasedOn="{StaticResource BaseItemSubTitleStyle}"
         TargetType="{x:Type TextBlock}">
-        <Setter Property="Foreground" Value="#ffffff" />
+        <Setter Property="Foreground" Value="#bfbfbf" />
     </Style>
 
     <!-- Seperator of Query and Result -->
@@ -101,8 +122,9 @@
         TargetType="{x:Type TextBlock}">
         <Setter Property="Foreground" Value="#ffffff" />
     </Style>
-    <SolidColorBrush x:Key="ItemSelectedBackgroundColor" Color="{m:DynamicColor SystemAccentColorLight1}" />
-
+    <SolidColorBrush x:Key="ItemSelectedBackgroundColor"
+        Color="#2b2b2b" />
+        
     <!-- Search pending bar -->
     <Style
         x:Key="PendingLineStyle"
@@ -168,7 +190,7 @@
     <CornerRadius x:Key="ItemRadius">8</CornerRadius>
     <Thickness x:Key="ItemMargin">10 0 10 0</Thickness>
     <Thickness x:Key="ResultMargin">0 0 0 10</Thickness>
-    
+
     <!-- Clock and Date styles -->
     <Style
         x:Key="ClockPanel"
