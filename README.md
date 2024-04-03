@@ -3,9 +3,8 @@
 
 ## 🖼️ Screenshots
 
-![image](https://user-images.githubusercontent.com/64279853/210125135-5f0377d3-1357-41fb-89a6-32bbb9603f6f.png)
-![image](https://user-images.githubusercontent.com/64279853/210125154-aa2cb105-69ff-414f-afd7-18dc71ff4870.png)
-![image](https://user-images.githubusercontent.com/64279853/210125175-651276f3-6034-4aab-91bb-eb39f4a735ce.png)
+![image](https://github.com/z1nc0r3/CircleDarkBlur.Flow-Launcher/assets/64279853/d25951a1-18fa-425f-b167-13395c967f69)
+![image](https://github.com/z1nc0r3/CircleDarkBlur.Flow-Launcher/assets/64279853/4203eff4-6570-466c-88a0-306908f86f9e)
 
 ## 🪶 Features
 
