@@ -123,7 +123,7 @@
         <Setter Property="Foreground" Value="#ffffff" />
     </Style>
     <SolidColorBrush x:Key="ItemSelectedBackgroundColor"
-        Color="#2b2b2b" />
+        Color="#a42b2b2b" />
         
     <!-- Search pending bar -->
     <Style
