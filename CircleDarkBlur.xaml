@@ -23,10 +23,10 @@
         BasedOn="{StaticResource BaseBulletStyle}"
         TargetType="{x:Type Border}">
         <Setter Property="Width" Value="4" />
-        <Setter Property="Height" Value="42" />
-        <Setter Property="CornerRadius" Value="2" />
+        <Setter Property="Height" Value="26" />
+        <Setter Property="CornerRadius" Value="1.5" />
         <Setter Property="Background" Value="#fff" />
-        <Setter Property="Margin" Value="4,0,0,0" />
+        <Setter Property="Margin" Value="8,0,0,0" />
     </Style>
 
     <!-- Main query box style including Query text-->
@@ -36,7 +36,8 @@
         TargetType="{x:Type TextBox}">
         <Setter Property="Padding" Value="0,0,50,0" />
         <Setter Property="Foreground" Value="#ffffff" />
-        <Setter Property="FontSize" Value="30" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="FontSize" Value="28" />
         <Setter Property="Height" Value="42" />
         <Setter Property="CaretBrush" Value="#A3A3A3" />
         <Setter Property="VerticalAlignment" Value="Center" />
@@ -53,7 +54,7 @@
         <Setter Property="Padding" Value="0,0,50,0" />
         <Setter Property="Background" Value="Transparent" />
         <Setter Property="Height" Value="42" />
-        <Setter Property="FontSize" Value="30" />
+        <Setter Property="FontSize" Value="28" />
         <Setter Property="Foreground" Value="#8a876e" />
         <Setter Property="Opacity" Value="0.5" />
     </Style>
@@ -103,7 +104,7 @@
         x:Key="SeparatorStyle"
         BasedOn="{StaticResource BaseSeparatorStyle}"
         TargetType="{x:Type Rectangle}">
-        <Setter Property="Fill" Value="#373737" />
+        <Setter Property="Fill" Value="#242424" />
         <Setter Property="Height" Value="1" />
         <Setter Property="Margin" Value="0,0,0,8" />
     </Style>
@@ -121,7 +122,7 @@
         <Setter Property="Foreground" Value="#ffffff" />
     </Style>
     <SolidColorBrush x:Key="ItemSelectedBackgroundColor"
-        Color="#a42b2b2b" />
+        Color="#4D000000" />
         
     <!-- Search pending bar -->
     <Style
