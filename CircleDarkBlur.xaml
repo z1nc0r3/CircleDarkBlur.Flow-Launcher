@@ -14,6 +14,8 @@
     </ResourceDictionary.MergedDictionaries>
 
     <system:Boolean x:Key="ThemeBlurEnabled">True</system:Boolean>
+    <system:String x:Key="SystemBG">Dark</system:String>
+    <Color x:Key="DarkBG">#33000000</Color> 
 
     <!-- Styles for bullet on the selected result item -->
     <Style
@@ -64,12 +66,6 @@
         <Setter Property="BorderThickness" Value="0" />
         <Setter Property="BorderBrush" Value="Transparent" />
 
-        <Setter Property="Background">
-            <Setter.Value>
-                <SolidColorBrush Color="Black" Opacity="0.5" />
-            </Setter.Value>
-        </Setter>
-
         <Setter Property="CornerRadius" Value="10" />
         <Setter Property="UseLayoutRounding" Value="True" />
         <Setter Property="SnapsToDevicePixels" Value="True" />
@@ -78,11 +74,7 @@
         x:Key="WindowStyle"
         BasedOn="{StaticResource BaseWindowStyle}"
         TargetType="{x:Type Window}">
-        <Setter Property="Background">
-            <Setter.Value>
-                <SolidColorBrush Color="Black" Opacity="0.7" />
-            </Setter.Value>
-        </Setter>
+        
         <Setter Property="Opacity" Value="0" />
         <Setter Property="Background" Value="#fff" />
         <Setter Property="Visibility" Value="Hidden" />
