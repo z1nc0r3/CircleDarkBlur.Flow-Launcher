@@ -1,4 +1,4 @@
-### 🟢 **Updated to support Flow Launcher v1.20.0**
+### 🟢 **Updated to support Flow Launcher v2.1.0**
 
 # 🎨 CircleDarkBlur Theme
 ### CircleDarkBlur is a theme for Flow Launcher with a blur effect. Inspired by the original `Circle Light` theme.
